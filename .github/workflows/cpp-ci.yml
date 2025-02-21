@@ -1,0 +1,46 @@
+name: C++ CI
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'model_based_db_local/**'
+      - '.github/workflows/cpp-ci.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'model_based_db_local/**'
+      - '.github/workflows/cpp-ci.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake build-essential python3-pip qt6-base-dev libsqlite3-dev libssl-dev libboost-all-dev nlohmann-json3-dev libspdlog-dev libfmt-dev
+
+    - name: Install conan
+      run: |
+        pip3 install conan
+        conan profile detect
+
+    - name: Configure CMake
+      working-directory: model_based_db_local
+      run: |
+        mkdir -p build
+        cd build
+        conan install .. --build=missing
+        cmake .. -DCMAKE_BUILD_TYPE=Release
+
+    - name: Build
+      working-directory: model_based_db_local/build
+      run: make -j$(nproc)
+
+    - name: Run tests
+      working-directory: model_based_db_local/build
+      run: ctest --output-on-failure
