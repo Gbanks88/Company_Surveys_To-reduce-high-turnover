@@ -1,0 +1,66 @@
+```diagram
+graph TD
+    %% Main Leadership
+    A[Director of Support Services] --> B[Software Support Manager]
+    A --> C[Hardware Support Manager]
+    A --> D[Maintenance Support Manager]
+
+    %% Software Support Team
+    B --> B1[Software Team Lead]
+    B1 --> B2[Software Engineers<br/>x11]
+    B1 --> B3[DevOps Engineers<br/>x21]
+    B1 --> B4[Backend Developers<br/>x22]
+    B1 --> B5[Frontend Developers<br/>x11]
+    B1 --> B6[Cloud Engineers<br/>x15]
+    B1 --> B7[Database Admins<br/>x16]
+    B1 --> B8[QA Engineers<br/>x9]
+    B1 --> B9[Systems Analysts<br/>x24]
+    B1 --> B10[Integration Specialists<br/>x16]
+    B1 --> B11[Support Staff<br/>x3]
+
+    %% Hardware Support Team
+    C --> C1[Hardware Team Lead]
+    C1 --> C2[Hardware Engineers<br/>x15]
+    C1 --> C3[Network Engineers<br/>x15]
+    C1 --> C4[Systems Administrators<br/>x17]
+    C1 --> C5[Security Engineers<br/>x20]
+    C1 --> C6[Infrastructure Specialists<br/>x16]
+    C1 --> C7[Data Center Technicians<br/>x24]
+    C1 --> C8[Network Administrators<br/>x17]
+    C1 --> C9[Equipment Technicians<br/>x16]
+    C1 --> C10[IT Support Specialists<br/>x13]
+    C1 --> C11[Support Staff<br/>x3]
+
+    %% Maintenance Support Team
+    D --> D1[Maintenance Team Lead]
+    D1 --> D2[Maintenance Engineers<br/>x14]
+    D1 --> D3[Facilities Managers<br/>x15]
+    D1 --> D4[Preventive Maintenance<br/>x24]
+    D1 --> D5[Repair Technicians<br/>x17]
+    D1 --> D6[Equipment Specialists<br/>x17]
+    D1 --> D7[Safety Inspectors<br/>x19]
+    D1 --> D8[Inventory Managers<br/>x15]
+    D1 --> D9[Quality Control<br/>x18]
+    D1 --> D10[Maintenance Planners<br/>x14]
+    D1 --> D11[Support Staff<br/>x3]
+
+    %% Styling
+    classDef leadership fill:#f9f,stroke:#333,stroke-width:4px
+    classDef manager fill:#bbf,stroke:#333,stroke-width:2px
+    classDef team fill:#dfd,stroke:#333,stroke-width:1px
+    
+    class A leadership
+    class B,C,D manager
+    class B1,C1,D1 team
+```
+
+Note: This diagram shows the complete organizational structure with:
+- Top level leadership (Director)
+- Three main support divisions (Software, Hardware, Maintenance)
+- Team composition with number of employees in each role
+- Support staff for each division
+
+To view this diagram:
+1. Copy the content between the ``` markers
+2. Paste it into a Mermaid-compatible editor or diagram.io
+3. The diagram will automatically render showing the hierarchical structure

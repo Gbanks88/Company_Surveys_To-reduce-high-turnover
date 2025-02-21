@@ -1,0 +1,29 @@
+2025-02-20 21:39:34,865 - ERROR - Failed to get IAM token
+2025-02-20 21:39:34,865 - INFO - === Validation Results ===
+2025-02-20 21:39:34,865 - INFO - Timestamp: 2025-02-20T21:39:34.390736
+2025-02-20 21:39:34,865 - INFO - Cloud Object Storage:
+2025-02-20 21:39:34,865 - INFO -   Valid: False
+2025-02-20 21:39:34,865 - INFO -   Message: Failed to connect to COS
+2025-02-20 21:47:21,568 - ERROR - Failed to get IAM token
+2025-02-20 21:47:21,568 - INFO - === Validation Results ===
+2025-02-20 21:47:21,569 - INFO - Timestamp: 2025-02-20T21:47:20.955796
+2025-02-20 21:47:21,569 - INFO - Cloud Object Storage:
+2025-02-20 21:47:21,569 - INFO -   Valid: False
+2025-02-20 21:47:21,569 - INFO -   Message: Failed to connect to COS
+2025-02-20 21:48:19,296 - ERROR - Failed to get IAM token
+2025-02-20 21:48:19,301 - INFO - === Validation Results ===
+2025-02-20 21:48:19,301 - INFO - Timestamp: 2025-02-20T21:48:18.979110
+2025-02-20 21:48:19,301 - INFO - Cloud Object Storage:
+2025-02-20 21:48:19,302 - INFO -   Valid: False
+2025-02-20 21:48:19,302 - INFO -   Message: Failed to connect to COS
+2025-02-20 21:49:07,562 - ERROR - Failed to get IAM token. Status: 400, Response: {"errorCode":"BXNIM0415E","errorMessage":"Provided API key could not be found.","context":{"requestId":"NnZoc3A-2ee3385826ff448bb8414f81a84f0d28","requestType":"incoming.Identity_Token","userAgent":"python-requests/2.32.3","url":"https://iam.cloud.ibm.com","instanceId":"iamid-10-2-4029-0ec96c4-64986c58c5-6vhsp","threadId":"e3cd0","host":"iamid-10-2-4029-0ec96c4-64986c58c5-6vhsp","startTime":"21.02.2025 04:49:07:409 UTC","endTime":"21.02.2025 04:49:07:515 UTC","elapsedTime":"106","locale":"en_US","clusterName":"iam-id-prod-us-south-dal10"}}
+2025-02-20 21:49:07,567 - INFO - === Validation Results ===
+2025-02-20 21:49:07,567 - INFO - Timestamp: 2025-02-20T21:49:07.237905
+2025-02-20 21:49:07,567 - INFO - Cloud Object Storage:
+2025-02-20 21:49:07,567 - INFO -   Valid: False
+2025-02-20 21:49:07,567 - INFO -   Message: Failed to connect to COS
+2025-02-20 21:52:31,113 - INFO - === Validation Results ===
+2025-02-20 21:52:31,118 - INFO - Timestamp: 2025-02-20T21:52:30.053461
+2025-02-20 21:52:31,118 - INFO - Cloud Object Storage:
+2025-02-20 21:52:31,118 - INFO -   Valid: True
+2025-02-20 21:52:31,118 - INFO -   Message: COS credentials validated successfully

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-02-20T20:11:19.000Z" agent="Mozilla/5.0" version="21.1.9" type="device">
+  <diagram id="eco_vehicle_operations" name="Eco-Vehicle Detailed Operations">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Manufacturing Processes -->
+        <mxCell id="manufacturing" value="Manufacturing Process Flow" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="240" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="body_assembly" value="Body Assembly&#10;- Aluminum Stamping&#10;- Robotics Welding&#10;- Composite Integration&#10;- Paint Shop (Water-Based)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="manufacturing">
+          <mxGeometry y="30" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="powertrain_assembly" value="Powertrain Assembly&#10;- Battery Pack Integration&#10;- Motor Assembly&#10;- Power Electronics&#10;- Testing &amp; Calibration" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="manufacturing">
+          <mxGeometry y="110" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="final_assembly" value="Final Assembly&#10;- Interior Installation&#10;- Systems Integration&#10;- Quality Control&#10;- Road Testing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="manufacturing">
+          <mxGeometry y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Environmental Impact -->
+        <mxCell id="environmental" value="Environmental Impact Metrics" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="240" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="production_impact" value="Production Impact&#10;- CO2: -50% vs Industry Avg&#10;- Water Usage: -40%&#10;- Renewable Energy: 100%&#10;- Waste Recycling: 95%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="environmental">
+          <mxGeometry y="30" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="vehicle_impact" value="Vehicle Lifecycle&#10;- Battery Recycling: 98%&#10;- Materials Recovery: 90%&#10;- Carbon Footprint: -70%&#10;- Energy Efficiency: 95%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="environmental">
+          <mxGeometry y="110" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="certifications" value="Green Certifications&#10;- ISO 14001&#10;- Carbon Neutral Factory&#10;- Zero Waste to Landfill&#10;- Green Supply Chain" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="environmental">
+          <mxGeometry y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Marketing Strategy -->
+        <mxCell id="marketing" value="Marketing &amp; Distribution" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="240" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="target_market" value="Target Market&#10;- Urban Professionals&#10;- Eco-Conscious Buyers&#10;- First-Time EV Owners&#10;- Fleet Operators" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="marketing">
+          <mxGeometry y="30" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="channels" value="Sales Channels&#10;- Direct Online Sales&#10;- Experience Centers&#10;- Virtual Showrooms&#10;- Mobile Service" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="marketing">
+          <mxGeometry y="110" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="customer_support" value="Customer Support&#10;- 24/7 Digital Assistant&#10;- Mobile Service Teams&#10;- OTA Updates&#10;- Community Platform" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="marketing">
+          <mxGeometry y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Component Sourcing -->
+        <mxCell id="sourcing" value="Component Sourcing Map" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="240" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="battery_sourcing" value="Battery Supply Chain&#10;- Cells: Local Production&#10;- Raw Materials: Global&#10;- Assembly: In-House&#10;- Testing: Automated" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sourcing">
+          <mxGeometry y="30" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="electronics_sourcing" value="Electronics&#10;- Processors: Asia&#10;- Sensors: Europe&#10;- Software: In-House&#10;- Integration: Local" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sourcing">
+          <mxGeometry y="110" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="materials_sourcing" value="Materials&#10;- Aluminum: Regional&#10;- Composites: Global&#10;- Interiors: Local&#10;- Recycled: 60% Local" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sourcing">
+          <mxGeometry y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Innovation Hub -->
+        <mxCell id="innovation" value="Innovation &amp; R&amp;D" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="240" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="battery_tech" value="Battery Technology&#10;- Next-Gen Chemistry&#10;- Fast-Charging Tech&#10;- Thermal Management&#10;- Longevity Research" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="innovation">
+          <mxGeometry y="30" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="manufacturing_tech" value="Manufacturing Innovation&#10;- AI Process Control&#10;- Robotic Assembly&#10;- 3D Printing&#10;- Smart Factory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="innovation">
+          <mxGeometry y="110" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="software_tech" value="Software Systems&#10;- Vehicle OS&#10;- Connected Services&#10;- Autonomous Features&#10;- Energy Management" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="innovation">
+          <mxGeometry y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Financial Projections -->
+        <mxCell id="financials" value="Financial Projections" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="240" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="production_costs" value="Production Costs&#10;- Year 1: $28,000/unit&#10;- Year 2: $26,000/unit&#10;- Year 3: $24,000/unit&#10;- Scale Benefits: -15%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="financials">
+          <mxGeometry y="30" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="revenue_projections" value="Revenue Projections&#10;- Year 1: 50,000 units&#10;- Year 2: 100,000 units&#10;- Year 3: 200,000 units&#10;- Market Share: 5%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="financials">
+          <mxGeometry y="110" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="profitability" value="Profitability Targets&#10;- Gross Margin: 20%&#10;- Operating Margin: 10%&#10;- Break-even: Year 2&#10;- ROI: 25% Year 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="financials">
+          <mxGeometry y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

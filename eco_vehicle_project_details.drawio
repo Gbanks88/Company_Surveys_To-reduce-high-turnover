@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-02-20T20:10:27.000Z" agent="Mozilla/5.0" version="21.1.9" type="device">
+  <diagram id="eco_vehicle_detailed" name="Eco-Vehicle Project Details">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Technical Specifications -->
+        <mxCell id="tech_specs" value="Technical Specifications" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="240" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="powertrain" value="Powertrain&#10;- Motor: 150kW Permanent Magnet&#10;- Battery: 75kWh LFP&#10;- Range: 250+ miles&#10;- Charging: 150kW DC Fast" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tech_specs">
+          <mxGeometry y="30" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="chassis" value="Chassis &amp; Body&#10;- Platform: Modular Electric&#10;- Weight: &lt;4000 lbs&#10;- Drag Coefficient: 0.25&#10;- Recycled Materials: 60%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="tech_specs">
+          <mxGeometry y="115" width="240" height="85" as="geometry"/>
+        </mxCell>
+
+        <!-- Supply Chain -->
+        <mxCell id="supply_chain" value="Supply Chain Network" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="240" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="suppliers" value="Key Components&#10;- Battery: Local Production&#10;- Motors: Strategic Partners&#10;- Electronics: Global Sourcing&#10;- Materials: Regional Supply" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="supply_chain">
+          <mxGeometry y="30" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="logistics" value="Logistics&#10;- Just-in-Time Delivery&#10;- Regional Distribution&#10;- Sustainable Transport&#10;- Inventory Optimization" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="supply_chain">
+          <mxGeometry y="115" width="240" height="85" as="geometry"/>
+        </mxCell>
+
+        <!-- Timeline Milestones -->
+        <mxCell id="timeline" value="Project Timeline" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="240" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="phase1" value="Phase 1 (Months 1-12)&#10;- Design Finalization&#10;- Prototype Development&#10;- Supply Chain Setup&#10;- Initial Testing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="timeline">
+          <mxGeometry y="30" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="phase2" value="Phase 2 (Months 13-24)&#10;- Production Setup&#10;- Certification Process&#10;- Market Testing&#10;- Launch Preparation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="timeline">
+          <mxGeometry y="115" width="240" height="85" as="geometry"/>
+        </mxCell>
+
+        <!-- Risk Management -->
+        <mxCell id="risk_mgmt" value="Risk Management Framework" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="240" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="tech_risks" value="Technical Risks&#10;- Battery Performance&#10;- Range Targets&#10;- Manufacturing Scale&#10;- Quality Control" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="risk_mgmt">
+          <mxGeometry y="30" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="market_risks" value="Market Risks&#10;- Price Competition&#10;- Consumer Adoption&#10;- Regulatory Changes&#10;- Supply Chain Disruption" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="risk_mgmt">
+          <mxGeometry y="115" width="240" height="85" as="geometry"/>
+        </mxCell>
+
+        <!-- Cost Analysis -->
+        <mxCell id="cost_analysis" value="Cost Breakdown" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="240" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="components" value="Component Costs&#10;- Battery: $7,500&#10;- Powertrain: $4,000&#10;- Body &amp; Chassis: $5,000&#10;- Electronics: $3,500" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cost_analysis">
+          <mxGeometry y="30" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="operations" value="Operational Costs&#10;- Manufacturing: $3,000&#10;- Assembly: $2,000&#10;- Logistics: $1,500&#10;- Overhead: $1,500" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cost_analysis">
+          <mxGeometry y="115" width="240" height="85" as="geometry"/>
+        </mxCell>
+
+        <!-- Quality Control -->
+        <mxCell id="quality_control" value="Quality Control System" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="240" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="testing" value="Testing Protocols&#10;- Component Testing&#10;- Assembly Verification&#10;- Performance Testing&#10;- Safety Certification" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="quality_control">
+          <mxGeometry y="30" width="240" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="metrics" value="Key Metrics&#10;- Defect Rate: &lt;0.1%&#10;- First-Time Quality: 95%&#10;- Reliability: 99.9%&#10;- Customer Satisfaction: 95%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="quality_control">
+          <mxGeometry y="115" width="240" height="85" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,23 @@
+{
+    "username": "survey_admin",
+    "password": "REPLACE_WITH_ACTUAL_PASSWORD",
+    "host": "localhost",
+    "port": 27017,
+    "database": "employee_surveys",
+    "authSource": "admin",
+    "authMechanism": "SCRAM-SHA-256",
+    "ssl": true,
+    "sslCAFile": "/path/to/ca.pem",
+    "connectionOptions": {
+        "connectTimeoutMS": 5000,
+        "socketTimeoutMS": 30000,
+        "maxPoolSize": 50,
+        "minPoolSize": 5
+    },
+    "roles": [
+        {
+            "role": "readWrite",
+            "db": "employee_surveys"
+        }
+    ]
+}

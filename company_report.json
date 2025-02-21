@@ -1,0 +1,11 @@
+{
+  "total_employees": 546,
+  "total_managers": 46,
+  "total_regular_employees": 500,
+  "hierarchy_levels": 3,
+  "employees_per_level": {
+    "0": 500,
+    "1": 42,
+    "2": 4
+  }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-02-20T20:12:38.000Z" agent="Mozilla/5.0" version="21.1.9" type="device">
+  <diagram id="eco_vehicle_execution" name="Eco-Vehicle Execution Details">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Production Line Layout -->
+        <mxCell id="production_layout" value="Production Line Layout" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="480" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="body_line" value="Body Manufacturing Line&#10;1. Press Shop&#10;   - Aluminum stamping stations&#10;   - Automated material handling&#10;2. Body Shop&#10;   - 500+ robotic welding points&#10;   - Composite integration cells&#10;3. Paint Shop&#10;   - Water-based paint system&#10;   - Zero-emission curing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="production_layout">
+          <mxGeometry y="30" width="480" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="assembly_line" value="Final Assembly Line&#10;1. Chassis Marriage&#10;   - Battery pack installation&#10;   - Powertrain integration&#10;2. Interior Assembly&#10;   - Modular cockpit installation&#10;   - Smart conveyor system&#10;3. Quality Control&#10;   - AI vision inspection&#10;   - End-of-line testing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="production_layout">
+          <mxGeometry y="170" width="480" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Supplier Qualification -->
+        <mxCell id="supplier_qual" value="Supplier Qualification Matrix" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="560" y="40" width="480" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="technical_req" value="Technical Requirements&#10;1. Quality Standards&#10;   - ISO 9001:2015 certification&#10;   - Industry-specific certifications&#10;   - Quality control metrics&#10;2. Production Capacity&#10;   - Minimum volume capabilities&#10;   - Scalability potential&#10;3. Innovation Capability&#10;   - R&D investment&#10;   - Patent portfolio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="supplier_qual">
+          <mxGeometry y="30" width="480" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="business_req" value="Business Requirements&#10;1. Financial Stability&#10;   - Credit rating&#10;   - Financial statements&#10;2. Sustainability&#10;   - Environmental certifications&#10;   - Carbon footprint metrics&#10;3. Risk Management&#10;   - Business continuity plan&#10;   - Disaster recovery procedures" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="supplier_qual">
+          <mxGeometry y="170" width="480" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- Customer Journey Map -->
+        <mxCell id="customer_journey" value="Customer Journey Map" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="480" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="pre_purchase" value="Pre-Purchase Phase&#10;1. Awareness&#10;   - Digital marketing campaigns&#10;   - Social media engagement&#10;   - Environmental impact education&#10;2. Consideration&#10;   - Virtual showroom experience&#10;   - Online configurator&#10;   - TCO calculator&#10;3. Decision&#10;   - Test drive program&#10;   - Finance options" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="customer_journey">
+          <mxGeometry y="30" width="480" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="post_purchase" value="Ownership Experience&#10;1. Delivery&#10;   - Home delivery option&#10;   - Digital walkthrough&#10;2. Ownership&#10;   - Mobile service&#10;   - OTA updates&#10;   - Community events&#10;3. Advocacy&#10;   - Referral program&#10;   - Social sharing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="customer_journey">
+          <mxGeometry y="180" width="480" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Cost Reduction Strategy -->
+        <mxCell id="cost_reduction" value="Cost Reduction Strategy" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="480" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="manufacturing_cost" value="Manufacturing Optimization&#10;1. Process Automation&#10;   - Robotic assembly: -20% labor cost&#10;   - AI quality control: -15% defect rate&#10;2. Material Innovation&#10;   - Recycled materials: -10% material cost&#10;   - Design optimization: -5% weight&#10;3. Supply Chain&#10;   - Local sourcing: -8% logistics cost&#10;   - Bulk purchasing: -12% component cost" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cost_reduction">
+          <mxGeometry y="30" width="480" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="operational_cost" value="Operational Efficiency&#10;1. Energy Management&#10;   - Smart factory: -25% energy usage&#10;   - Renewable energy: -15% power cost&#10;2. Inventory Optimization&#10;   - Just-in-time delivery: -20% storage cost&#10;   - Predictive analytics: -10% waste&#10;3. Continuous Improvement&#10;   - Lean manufacturing: -5% annually&#10;   - Employee suggestions: 1000+ implemented" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="cost_reduction">
+          <mxGeometry y="180" width="480" height="140" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

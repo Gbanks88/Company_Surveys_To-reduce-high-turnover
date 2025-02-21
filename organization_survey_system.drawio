@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-02-20T19:53:10.000Z" agent="Mozilla/5.0" version="21.1.9" type="device">
+  <diagram id="org_survey_system" name="Organization &amp; Survey System">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Director Level -->
+        <mxCell id="director" value="Director of Support Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="200" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Support Managers -->
+        <mxCell id="sw_manager" value="Software Support Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hw_manager" value="Hardware Support Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="470" y="160" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="maint_manager" value="Maintenance Support Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="780" y="160" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Manager Connections -->
+        <mxCell id="dir_sw" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="director" target="sw_manager">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="dir_hw" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="director" target="hw_manager">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="dir_maint" value="" style="endArrow=classic;html=1;exitX=0.75;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="director" target="maint_manager">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Software Team -->
+        <mxCell id="sw_team" value="Software Support Team&#xa;(169 Members)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="240" height="200" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="sw_roles" value="• Software Engineers (11)&#xa;• DevOps Engineers (21)&#xa;• Backend Developers (22)&#xa;• Frontend Developers (11)&#xa;• Cloud Engineers (15)&#xa;• Database Admins (16)&#xa;• QA Engineers (9)&#xa;• Systems Analysts (24)&#xa;• Integration Specialists (16)&#xa;• Support Staff (3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sw_team">
+          <mxGeometry y="40" width="240" height="160" as="geometry"/>
+        </mxCell>
+        
+        <!-- Hardware Team -->
+        <mxCell id="hw_team" value="Hardware Support Team&#xa;(169 Members)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="430" y="480" width="240" height="200" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hw_roles" value="• Hardware Engineers (15)&#xa;• Network Engineers (15)&#xa;• Systems Administrators (17)&#xa;• Security Engineers (20)&#xa;• Infrastructure Specialists (16)&#xa;• Data Center Technicians (24)&#xa;• Network Administrators (17)&#xa;• Equipment Technicians (16)&#xa;• IT Support Specialists (13)&#xa;• Support Staff (3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="hw_team">
+          <mxGeometry y="40" width="240" height="160" as="geometry"/>
+        </mxCell>
+        
+        <!-- Maintenance Team -->
+        <mxCell id="maint_team" value="Maintenance Support Team&#xa;(169 Members)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+          <mxGeometry x="740" y="480" width="240" height="200" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="maint_roles" value="• Maintenance Engineers (14)&#xa;• Facilities Managers (15)&#xa;• Preventive Maintenance (24)&#xa;• Repair Technicians (17)&#xa;• Equipment Specialists (17)&#xa;• Safety Inspectors (19)&#xa;• Inventory Managers (15)&#xa;• Quality Control (18)&#xa;• Maintenance Planners (14)&#xa;• Support Staff (3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="maint_team">
+          <mxGeometry y="40" width="240" height="160" as="geometry"/>
+        </mxCell>
+        
+        <!-- Team Connections -->
+        <mxCell id="sw_team_conn" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="sw_manager" target="sw_team">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hw_team_conn" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="hw_manager" target="hw_team">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="maint_team_conn" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="maint_manager" target="maint_team">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Survey System -->
+        <mxCell id="survey_system" value="Survey Evaluation System" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="430" y="720" width="240" height="220" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="survey_details" value="Weekly Surveys:&#xa;1. How was your day? (1-5)&#xa;2. What did you accomplish? (1-5)&#xa;3. Are you happy at work? (1-5)&#xa;&#xa;Evaluation Cycles:&#xa;• Quarterly Reviews (Q1-Q4)&#xa;• Annual Performance Review&#xa;&#xa;Analysis:&#xa;• Team Performance Metrics&#xa;• Quarter-over-Quarter Trends&#xa;• Year-over-Year Analysis&#xa;• Department Comparisons" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="survey_system">
+          <mxGeometry y="26" width="240" height="194" as="geometry"/>
+        </mxCell>
+
+        <!-- Evaluation Timeline -->
+        <mxCell id="eval_timeline" value="Manager Evaluation Timeline" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="430" y="960" width="240" height="180" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="eval_details" value="Quarterly Reviews:&#xa;• Q1 (Jan-Mar): Initial Assessment&#xa;• Q2 (Apr-Jun): Progress Review&#xa;• Q3 (Jul-Sep): Development Check&#xa;• Q4 (Oct-Dec): Final Evaluation&#xa;&#xa;Annual Review (December):&#xa;• Team Performance Summary&#xa;• Strategic Planning&#xa;• Resource Allocation&#xa;• Budget Planning" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="eval_timeline">
+          <mxGeometry y="26" width="240" height="154" as="geometry"/>
+        </mxCell>
+
+        <!-- Q1 KPIs -->
+        <mxCell id="q1_kpis" value="Q1 Evaluation Metrics" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="120" y="1160" width="200" height="160" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="q1_details" value="Manager Tasks:&#xa;• Team Satisfaction Survey&#xa;• Individual Goal Setting&#xa;• Skill Gap Analysis&#xa;&#xa;KPIs:&#xa;• Employee Satisfaction Score&#xa;• Team Productivity Metrics&#xa;• Training Completion Rate&#xa;• Project Success Rate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="q1_kpis">
+          <mxGeometry y="26" width="200" height="134" as="geometry"/>
+        </mxCell>
+
+        <!-- Q2 KPIs -->
+        <mxCell id="q2_kpis" value="Q2 Evaluation Metrics" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="340" y="1160" width="200" height="160" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="q2_details" value="Manager Tasks:&#xa;• Mid-Year Performance Review&#xa;• Team Progress Assessment&#xa;• Resource Optimization&#xa;&#xa;KPIs:&#xa;• Goal Completion Rate&#xa;• Team Efficiency Metrics&#xa;• Resource Utilization&#xa;• Customer Satisfaction" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="q2_kpis">
+          <mxGeometry y="26" width="200" height="134" as="geometry"/>
+        </mxCell>
+
+        <!-- Q3 KPIs -->
+        <mxCell id="q3_kpis" value="Q3 Evaluation Metrics" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="560" y="1160" width="200" height="160" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="q3_details" value="Manager Tasks:&#xa;• Development Review&#xa;• Career Path Planning&#xa;• Team Building Assessment&#xa;&#xa;KPIs:&#xa;• Skill Development Progress&#xa;• Innovation Metrics&#xa;• Team Collaboration Score&#xa;• Project Quality Metrics" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="q3_kpis">
+          <mxGeometry y="26" width="200" height="134" as="geometry"/>
+        </mxCell>
+
+        <!-- Q4 KPIs -->
+        <mxCell id="q4_kpis" value="Q4 Evaluation Metrics" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="780" y="1160" width="200" height="160" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="q4_details" value="Manager Tasks:&#xa;• Annual Performance Review&#xa;• Goal Achievement Analysis&#xa;• Strategic Planning&#xa;&#xa;KPIs:&#xa;• Year-End Performance Score&#xa;• Team Growth Metrics&#xa;• Budget Utilization&#xa;• Strategic Goal Alignment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="q4_kpis">
+          <mxGeometry y="26" width="200" height="134" as="geometry"/>
+        </mxCell>
+
+        <!-- Connect Timeline to KPIs -->
+        <mxCell id="timeline_q1" value="" style="endArrow=classic;html=1;exitX=0.25;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="eval_timeline" target="q1_kpis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="timeline_q2" value="" style="endArrow=classic;html=1;exitX=0.417;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="eval_timeline" target="q2_kpis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="timeline_q3" value="" style="endArrow=classic;html=1;exitX=0.583;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="eval_timeline" target="q3_kpis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="timeline_q4" value="" style="endArrow=classic;html=1;exitX=0.75;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="eval_timeline" target="q4_kpis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Annual Review Box -->
+        <mxCell id="annual_review" value="Annual Review Components" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="430" y="1340" width="240" height="160" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="annual_details" value="Key Components:&#xa;• Yearly Performance Summary&#xa;• Team Development Progress&#xa;• Resource Utilization Analysis&#xa;• Budget Performance Review&#xa;• Strategic Goals Achievement&#xa;• Team Growth Assessment&#xa;• Innovation and Improvement Plans&#xa;• Next Year's Objectives Setting" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="annual_review">
+          <mxGeometry y="26" width="240" height="134" as="geometry"/>
+        </mxCell>
+
+        <!-- Connect Q4 to Annual Review -->
+        <mxCell id="q4_annual" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5" edge="1" parent="1" source="q4_kpis" target="annual_review">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Survey Connections -->
+        <mxCell id="sw_survey" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1" edge="1" parent="1" source="sw_team" target="survey_system">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hw_survey" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1" edge="1" parent="1" source="hw_team" target="survey_system">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="maint_survey" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5;dashed=1" edge="1" parent="1" source="maint_team" target="survey_system">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connect Survey System to Timeline -->
+        <mxCell id="survey_timeline" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="survey_system" target="eval_timeline">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="Support Services Organization &amp; Survey System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="400" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Software Support Role Managers -->
+        <mxCell id="sw_role_managers" value="Software Support Role Managers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="800" height="600" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="sw_role_details" value="Development Manager (33):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• Strategic technical direction&#xa;• Code quality standards&#xa;• Team performance&#xa;Team Structure:&#xa;• Sr. Software Engineers (12)&#xa;  - Architecture design&#xa;  - Technical leadership&#xa;  - Mentoring juniors&#xa;• Mid-level Developers (15)&#xa;  - Feature implementation&#xa;  - Code reviews&#xa;  - Documentation&#xa;• Junior Developers (6)&#xa;  - Bug fixes&#xa;  - Unit testing&#xa;  - Code maintenance&#xa;&#xa;DevOps Manager (21):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• CI/CD pipeline management&#xa;• Infrastructure automation&#xa;• Deployment strategies&#xa;Team Structure:&#xa;• CI/CD Specialists (8)&#xa;  - Pipeline automation&#xa;  - Build optimization&#xa;  - Release management&#xa;• Platform Engineers (7)&#xa;  - Platform development&#xa;  - Tool integration&#xa;  - Infrastructure as code&#xa;• SRE Engineers (6)&#xa;  - System reliability&#xa;  - Performance monitoring&#xa;  - Incident response&#xa;&#xa;Backend Manager (22):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• API architecture&#xa;• Database design&#xa;• Service scalability&#xa;Team Structure:&#xa;• API Developers (8)&#xa;  - REST/GraphQL APIs&#xa;  - Microservices&#xa;  - API security&#xa;• Database Engineers (8)&#xa;  - Data modeling&#xa;  - Query optimization&#xa;  - Data migration&#xa;• Service Developers (6)&#xa;  - Business logic&#xa;  - Service integration&#xa;  - Performance tuning&#xa;&#xa;Frontend Manager (11):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• UI/UX strategy&#xa;• Frontend architecture&#xa;• User experience&#xa;Team Structure:&#xa;• UI Developers (5)&#xa;  - Component development&#xa;  - Responsive design&#xa;  - UI testing&#xa;• UX Engineers (4)&#xa;  - User research&#xa;  - Prototyping&#xa;  - Accessibility&#xa;• Web Developers (2)&#xa;  - Web standards&#xa;  - Browser compatibility&#xa;  - Performance&#xa;&#xa;Cloud Services Manager (15):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• Cloud strategy&#xa;• Cost optimization&#xa;• Security compliance&#xa;Team Structure:&#xa;• Cloud Architects (5)&#xa;  - Solution design&#xa;  - Best practices&#xa;  - Migration planning&#xa;• Cloud Engineers (7)&#xa;  - Implementation&#xa;  - Automation&#xa;  - Monitoring&#xa;• Cloud Operations (3)&#xa;  - Daily operations&#xa;  - Troubleshooting&#xa;  - Cost tracking" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sw_role_managers">
+          <mxGeometry y="26" width="800" height="574" as="geometry"/>
+        </mxCell>
+
+        <!-- Second Part of Software Support Role Managers -->
+        <mxCell id="sw_role_managers2" value="Software Support Role Managers (Continued)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="40" y="890" width="800" height="600" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="sw_role_details2" value="Database Manager (16):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• Database administration&#xa;• Data security&#xa;• Performance optimization&#xa;Team Structure:&#xa;• Database Administrators (6)&#xa;  - Database maintenance&#xa;  - Backup/recovery&#xa;  - Security management&#xa;• Data Engineers (6)&#xa;  - ETL processes&#xa;  - Data pipelines&#xa;  - Data warehousing&#xa;• Database Architects (4)&#xa;  - Schema design&#xa;  - Capacity planning&#xa;  - High availability&#xa;&#xa;QA Manager (9):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• Quality standards&#xa;• Test strategy&#xa;• Process improvement&#xa;Team Structure:&#xa;• Test Engineers (4)&#xa;  - Test planning&#xa;  - Test execution&#xa;  - Defect tracking&#xa;• QA Analysts (3)&#xa;  - Requirements analysis&#xa;  - Test cases&#xa;  - Quality metrics&#xa;• Automation Testers (2)&#xa;  - Test automation&#xa;  - Framework development&#xa;  - CI/CD integration&#xa;&#xa;Systems Manager (24):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• System architecture&#xa;• Technical planning&#xa;• Innovation strategy&#xa;Team Structure:&#xa;• System Analysts (10)&#xa;  - Requirements gathering&#xa;  - System analysis&#xa;  - Process modeling&#xa;• Technical Architects (8)&#xa;  - Architecture design&#xa;  - Technology selection&#xa;  - Standards definition&#xa;• System Administrators (6)&#xa;  - System maintenance&#xa;  - Security updates&#xa;  - Performance tuning&#xa;&#xa;Integration Manager (16):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• Integration strategy&#xa;• System connectivity&#xa;• API management&#xa;Team Structure:&#xa;• Integration Engineers (6)&#xa;  - System integration&#xa;  - Data mapping&#xa;  - Error handling&#xa;• API Specialists (6)&#xa;  - API design&#xa;  - Documentation&#xa;  - Version control&#xa;• Technical Leads (4)&#xa;  - Team leadership&#xa;  - Technical direction&#xa;  - Project coordination&#xa;&#xa;Support Manager (3):&#xa;Reports to: Software Support Manager&#xa;Responsibilities:&#xa;• Support operations&#xa;• User satisfaction&#xa;• Issue resolution&#xa;Team Structure:&#xa;• Technical Support (1)&#xa;  - Technical issues&#xa;  - User guidance&#xa;  - Problem solving&#xa;• Help Desk (1)&#xa;  - User assistance&#xa;  - Issue tracking&#xa;  - Documentation&#xa;• Administrative Support (1)&#xa;  - Team coordination&#xa;  - Resource management&#xa;  - Reporting" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sw_role_managers2">
+          <mxGeometry y="26" width="800" height="574" as="geometry"/>
+        </mxCell>
+
+        <!-- Connect Parts -->
+        <mxCell id="connect_parts" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="sw_role_managers" target="sw_role_managers2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Role Manager Labels -->
+        <mxCell id="sw_role_label" value="Software Support Role Managers and Detailed Team Structure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="165" y="260" width="550" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Hardware Support Role Managers -->
+        <mxCell id="hw_role_managers" value="Hardware Support Role Managers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="350" y="280" width="200" height="200" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="hw_role_details" value="• Hardware Eng. Manager (15)&#xa;• Network Eng. Manager (15)&#xa;• Systems Admin Manager (17)&#xa;• Security Manager (20)&#xa;• Infrastructure Manager (16)&#xa;• Data Center Manager (24)&#xa;• Network Admin Manager (17)&#xa;• Equipment Manager (16)&#xa;• IT Support Manager (13)&#xa;• Support Staff Manager (3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="hw_role_managers">
+          <mxGeometry y="26" width="200" height="174" as="geometry"/>
+        </mxCell>
+
+        <!-- Maintenance Support Role Managers -->
+        <mxCell id="maint_role_managers" value="Maintenance Support Role Managers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="660" y="280" width="200" height="200" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="maint_role_details" value="• Maintenance Eng. Manager (14)&#xa;• Facilities Manager (15)&#xa;• Preventive Maint. Manager (24)&#xa;• Repair Manager (17)&#xa;• Equipment Spec. Manager (17)&#xa;• Safety Manager (19)&#xa;• Inventory Manager (15)&#xa;• Quality Control Manager (18)&#xa;• Planning Manager (14)&#xa;• Support Staff Manager (3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="maint_role_managers">
+          <mxGeometry y="26" width="200" height="174" as="geometry"/>
+        </mxCell>
+
+        <!-- Connect Support Managers to Role Managers -->
+        <mxCell id="sw_to_roles" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="sw_manager" target="sw_role_managers">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hw_to_roles" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="hw_manager" target="hw_role_managers">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="maint_to_roles" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0" edge="1" parent="1" source="maint_manager" target="maint_role_managers">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Connect Role Managers to Teams -->
+        <mxCell id="sw_roles_to_team" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1" edge="1" parent="1" source="sw_role_managers" target="sw_team">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hw_roles_to_team" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1" edge="1" parent="1" source="hw_role_managers" target="hw_team">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="maint_roles_to_team" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;dashed=1" edge="1" parent="1" source="maint_role_managers" target="maint_team">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Role Manager Labels -->
+        <mxCell id="sw_role_label" value="Role-Specific Managers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="65" y="260" width="150" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="hw_role_label" value="Role-Specific Managers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="375" y="260" width="150" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="maint_role_label" value="Role-Specific Managers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="685" y="260" width="150" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

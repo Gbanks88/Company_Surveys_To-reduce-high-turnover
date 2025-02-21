@@ -1,0 +1,146 @@
+<mxfile host="65bd71144e">
+    <diagram id="risk_assessment" name="Risk Assessment">
+        <mxGraphModel dx="1386" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Risk Categories -->
+                <mxCell id="risk_center" value="Risk Assessment&#xa;Matrix" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="480" y="20" width="140" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- Main Risk Categories -->
+                <mxCell id="technical" value="Technical&#xa;Risks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+                    <mxGeometry x="40" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="schedule" value="Schedule&#xa;Risks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+                    <mxGeometry x="280" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="cost" value="Cost&#xa;Risks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+                    <mxGeometry x="520" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="market" value="Market&#xa;Risks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+                    <mxGeometry x="760" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Technical Risks -->
+                <mxCell id="tr_001" value="TR-001&#xa;Battery Performance&#xa;Rating: Extreme" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+                    <mxGeometry x="40" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="tr_002" value="TR-002&#xa;Software Integration&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+                    <mxGeometry x="40" y="400" width="160" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- Schedule Risks -->
+                <mxCell id="sr_001" value="SR-001&#xa;Supply Chain Delays&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+                    <mxGeometry x="280" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="sr_002" value="SR-002&#xa;Regulatory Approval&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+                    <mxGeometry x="280" y="400" width="160" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- Cost Risks -->
+                <mxCell id="cr_001" value="CR-001&#xa;Material Cost Increase&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+                    <mxGeometry x="520" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="cr_002" value="CR-002&#xa;Equipment Cost Overrun&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+                    <mxGeometry x="520" y="400" width="160" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- Market Risks -->
+                <mxCell id="mr_001" value="MR-001&#xa;Competition Entry&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+                    <mxGeometry x="760" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="mr_002" value="MR-002&#xa;Demand Changes&#xa;Rating: High" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+                    <mxGeometry x="760" y="400" width="160" height="80" as="geometry"/>
+                </mxCell>
+
+                <!-- Mitigation Strategies -->
+                <mxCell id="tr_001_mit" value="Multiple suppliers&#xa;Advanced testing&#xa;Conservative specs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+                    <mxGeometry x="40" y="520" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="sr_001_mit" value="Buffer inventory&#xa;Multiple suppliers&#xa;Local sourcing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+                    <mxGeometry x="280" y="520" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="cr_001_mit" value="Long-term contracts&#xa;Hedging strategy&#xa;Cost monitoring" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+                    <mxGeometry x="520" y="520" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="mr_001_mit" value="Feature differentiation&#xa;Strong brand strategy&#xa;Market monitoring" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+                    <mxGeometry x="760" y="520" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Risk Matrix -->
+                <mxCell id="risk_matrix" value="Risk Matrix" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="1">
+                    <mxGeometry x="440" y="620" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="extreme" value="Extreme: Immediate Action Required" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="risk_matrix">
+                    <mxGeometry y="30" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="high" value="High: Weekly Management Review" style="text;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="risk_matrix">
+                    <mxGeometry y="60" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="medium" value="Medium: Monthly Review" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="risk_matrix">
+                    <mxGeometry y="90" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="low" value="Low: Quarterly Review" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="risk_matrix">
+                    <mxGeometry y="120" width="220" height="30" as="geometry"/>
+                </mxCell>
+
+                <!-- Connections -->
+                <!-- Categories to center -->
+                <mxCell id="2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="technical" target="risk_center">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="schedule" target="risk_center">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cost" target="risk_center">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="market" target="risk_center">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- Risks to categories -->
+                <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tr_001" target="technical">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sr_001" target="schedule">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cr_001" target="cost">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mr_001" target="market">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- Mitigation to risks -->
+                <mxCell id="10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tr_001_mit" target="tr_002">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sr_001_mit" target="sr_002">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cr_001_mit" target="cr_002">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mr_001_mit" target="mr_002">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

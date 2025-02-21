@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Vehicle Production Dashboard</title>
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/assets/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .metric-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .status-good { background-color: #28a745; }
+        .status-warning { background-color: #ffc107; }
+        .status-error { background-color: #dc3545; }
+        .nav-tabs .nav-link {
+            color: #495057;
+        }
+        .nav-tabs .nav-link.active {
+            font-weight: bold;
+        }
+        .requirement-status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .status-met { background-color: #d4edda; color: #155724; }
+        .status-pending { background-color: #fff3cd; color: #856404; }
+        .status-not-met { background-color: #f8d7da; color: #721c24; }
+        /* Offline indicator */
+        .offline-indicator {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            z-index: 9999;
+        }
+        body.offline .offline-indicator {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="offline-indicator">
+        You are currently offline. Some features may be limited.
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Eco-Vehicle Production Dashboard</span>
+            <div class="d-flex align-items-center">
+                <span class="text-light me-2">Connection Status:</span>
+                <span id="connection-status" class="status-indicator status-error"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <ul class="nav nav-tabs mb-4" id="dashboardTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="machine-tab" data-bs-toggle="tab" href="#machine" role="tab">Machine Status</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="requirements-tab" data-bs-toggle="tab" href="#requirements" role="tab">Requirements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="vehicle-tab" data-bs-toggle="tab" href="#vehicle" role="tab">Vehicle Metrics</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="dashboardContent">
+            <!-- Machine Status Tab -->
+            <div class="tab-pane fade show active" id="machine" role="tabpanel">
+                <div class="row">
+                    <!-- Motion State -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Motion State</h5>
+                                <div id="motion-state">
+                                    <p>Position: <span id="position">--</span></p>
+                                    <p>Velocity: <span id="velocity">--</span></p>
+                                    <p>Acceleration: <span id="acceleration">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Safety Status -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Safety Status</h5>
+                                <div id="safety-status">
+                                    <p>Collision Risk: <span id="collision-risk">--</span></p>
+                                    <p>Safety Zones: <span id="safety-zones">--</span></p>
+                                    <p>Emergency Stop: <span id="emergency-stop">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eco Metrics -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Eco Metrics</h5>
+                                <div id="eco-metrics">
+                                    <p>Power Usage: <span id="power-usage">--</span></p>
+                                    <p>Carbon Footprint: <span id="carbon-footprint">--</span></p>
+                                    <p>Efficiency Score: <span id="efficiency-score">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Status -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">System Status</h5>
+                                <div id="system-status">
+                                    <p>CPU Load: <span id="cpu-load">--</span></p>
+                                    <p>Memory Usage: <span id="memory-usage">--</span></p>
+                                    <p>Temperature: <span id="temperature">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maintenance State -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Maintenance State</h5>
+                                <div id="maintenance-state">
+                                    <p>Component Health: <span id="component-health">--</span></p>
+                                    <p>Next Service: <span id="next-service">--</span></p>
+                                    <p>Wear Level: <span id="wear-level">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requirements Tab -->
+            <div class="tab-pane fade" id="requirements" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Vehicle Performance Requirements</h5>
+                                <div id="performance-requirements">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Range: ≥250 miles per charge</span>
+                                        <span class="requirement-status status-pending">Pending</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Top Speed: 130 mph</span>
+                                        <span class="requirement-status status-met">Met</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Acceleration: 0-60 mph in <7s</span>
+                                        <span class="requirement-status status-met">Met</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Battery System Requirements</h5>
+                                <div id="battery-requirements">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Capacity: 75 kWh usable</span>
+                                        <span class="requirement-status status-met">Met</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Charging Rate: 150 kW peak</span>
+                                        <span class="requirement-status status-pending">Pending</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>Cycle Life: >2000 cycles</span>
+                                        <span class="requirement-status status-pending">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle Metrics Tab -->
+            <div class="tab-pane fade" id="vehicle" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Production Metrics</h5>
+                                <div id="production-metrics">
+                                    <p>Daily Output: <span id="daily-output">--</span></p>
+                                    <p>Quality Score: <span id="quality-score">--</span></p>
+                                    <p>Cycle Time: <span id="cycle-time">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Battery Performance</h5>
+                                <div id="battery-metrics">
+                                    <p>Current Capacity: <span id="battery-capacity">--</span></p>
+                                    <p>Charge Rate: <span id="charge-rate">--</span></p>
+                                    <p>Temperature: <span id="battery-temp">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card metric-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Safety Compliance</h5>
+                                <div id="safety-metrics">
+                                    <p>Crash Test Rating: <span id="crash-rating">--</span></p>
+                                    <p>Safety Features: <span id="safety-features">--</span></p>
+                                    <p>Compliance Score: <span id="compliance-score">--</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

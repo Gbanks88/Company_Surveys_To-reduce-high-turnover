@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-02-20T20:14:38.000Z" agent="Mozilla/5.0" version="21.1.9" type="device">
+  <diagram id="eco_vehicle_process" name="Eco-Vehicle Process Control">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Detailed Process Flow -->
+        <mxCell id="process_flow" value="Detailed Process Flow" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="480" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="material_flow" value="Material Flow Process&#10;1. Receiving&#10;   - RFID tracking system&#10;   - Automated inventory update&#10;   - Quality inspection gates&#10;2. Pre-Production&#10;   - Just-in-time staging&#10;   - Smart material routing&#10;   - Component preparation&#10;3. Production Line&#10;   - Synchronized delivery&#10;   - Real-time consumption tracking&#10;   - Waste reduction system&#10;4. Post-Production&#10;   - Finished goods tracking&#10;   - Automated warehousing&#10;   - Shipping optimization" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="process_flow">
+          <mxGeometry y="30" width="480" height="310" as="geometry"/>
+        </mxCell>
+
+        <!-- Quality Control Checkpoints -->
+        <mxCell id="quality_control" value="Quality Control Checkpoints" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="560" y="40" width="480" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="inspection_points" value="Critical Control Points&#10;1. Component Inspection&#10;   - Battery cell testing (100%)&#10;   - Motor performance check&#10;   - Electronics validation&#10;2. Assembly Verification&#10;   - Torque monitoring system&#10;   - Vision system inspection&#10;   - Gap and flush measurement&#10;3. System Testing&#10;   - High-voltage safety check&#10;   - Water ingress testing&#10;   - EMC compliance&#10;4. Final Testing&#10;   - Road test simulation&#10;   - Range verification&#10;   - NVH testing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="quality_control">
+          <mxGeometry y="30" width="480" height="310" as="geometry"/>
+        </mxCell>
+
+        <!-- Resource Allocation -->
+        <mxCell id="resource_allocation" value="Resource Allocation Map" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="480" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="resources" value="Resource Distribution&#10;1. Human Capital&#10;   - Skilled operators: 45%&#10;   - Technical specialists: 25%&#10;   - Quality control: 15%&#10;   - Support staff: 15%&#10;2. Equipment&#10;   - Robotics systems: 40%&#10;   - Testing equipment: 25%&#10;   - Material handling: 20%&#10;   - Maintenance tools: 15%&#10;3. Technology&#10;   - Production control: 35%&#10;   - Quality systems: 30%&#10;   - Data analytics: 20%&#10;   - IoT infrastructure: 15%&#10;4. Budget Allocation&#10;   - Direct materials: 45%&#10;   - Labor: 25%&#10;   - Overhead: 20%&#10;   - R&D: 10%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="resource_allocation">
+          <mxGeometry y="30" width="480" height="310" as="geometry"/>
+        </mxCell>
+
+        <!-- Risk Mitigation -->
+        <mxCell id="risk_mitigation" value="Risk Mitigation Strategy" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="560" y="420" width="480" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="risk_strategies" value="Risk Management Framework&#10;1. Supply Chain Risks&#10;   - Dual sourcing strategy&#10;   - Local supplier development&#10;   - Buffer inventory management&#10;   - Real-time monitoring system&#10;2. Production Risks&#10;   - Predictive maintenance&#10;   - Backup power systems&#10;   - Cross-trained workforce&#10;   - Modular line design&#10;3. Quality Risks&#10;   - Early warning systems&#10;   - Statistical process control&#10;   - Failure mode analysis&#10;   - Continuous monitoring&#10;4. Market Risks&#10;   - Flexible production capacity&#10;   - Product diversification&#10;   - Market intelligence system&#10;   - Dynamic pricing strategy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="risk_mitigation">
+          <mxGeometry y="30" width="480" height="310" as="geometry"/>
+        </mxCell>
+
+        <!-- KPI Dashboard -->
+        <mxCell id="kpi_dashboard" value="Key Performance Indicators" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="metrics" value="Production Metrics&#10;- Overall Equipment Effectiveness (OEE): 85%&#10;- First Time Through (FTT): 92%&#10;- Defects Per Million Opportunities (DPMO): &lt;50&#10;- Production Cycle Time: 24 hours&#10;- Energy Efficiency: 95%&#10;- Material Utilization: 98%&#10;- Labor Productivity: 95%&#10;- Quality Rating: 99.9%&#10;- On-Time Delivery: 98%" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="kpi_dashboard">
+          <mxGeometry y="30" width="480" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- Continuous Improvement -->
+        <mxCell id="improvement" value="Continuous Improvement System" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="560" y="800" width="480" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="kaizen" value="Kaizen Implementation&#10;- Daily improvement meetings&#10;- Employee suggestion system&#10;- Rapid implementation process&#10;- Success metrics tracking&#10;- Knowledge sharing platform&#10;- Innovation rewards program&#10;- Cross-functional teams&#10;- Best practice standardization&#10;- Regular process audits" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="improvement">
+          <mxGeometry y="30" width="480" height="170" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

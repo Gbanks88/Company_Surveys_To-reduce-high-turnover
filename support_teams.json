@@ -1,0 +1,58 @@
+{
+  "Software": {
+    "count": 169,
+    "roles": {
+      "Software Support Manager": 1,
+      "Cloud Engineer": 15,
+      "Backend Developer": 22,
+      "Systems Analyst": 24,
+      "Frontend Developer": 11,
+      "Software Engineer": 11,
+      "QA Engineer": 9,
+      "Integration Specialist": 16,
+      "Database Administrator": 16,
+      "Application Support Specialist": 20,
+      "DevOps Engineer": 21,
+      "Administrative Assistant": 1,
+      "Resource Coordinator": 1,
+      "Documentation Specialist": 1
+    }
+  },
+  "Hardware": {
+    "count": 169,
+    "roles": {
+      "Hardware Support Manager": 1,
+      "IT Support Specialist": 13,
+      "Network Administrator": 17,
+      "Hardware Engineer": 15,
+      "Network Engineer": 15,
+      "Equipment Technician": 16,
+      "Data Center Technician": 24,
+      "Hardware Analyst": 12,
+      "Systems Administrator": 17,
+      "Security Engineer": 20,
+      "Infrastructure Specialist": 16,
+      "Team Lead": 1,
+      "Operations Coordinator": 2
+    }
+  },
+  "Maintenance": {
+    "count": 169,
+    "roles": {
+      "Maintenance Support Manager": 1,
+      "Quality Control Specialist": 18,
+      "Equipment Maintenance Specialist": 17,
+      "Safety Inspector": 19,
+      "Maintenance Coordinator": 12,
+      "Maintenance Planner": 14,
+      "Repair Technician": 17,
+      "Preventive Maintenance Specialist": 24,
+      "Maintenance Engineer": 14,
+      "Facilities Manager": 15,
+      "Inventory Manager": 15,
+      "Project Manager": 1,
+      "Business Analyst": 1,
+      "Training Specialist": 1
+    }
+  }
+}

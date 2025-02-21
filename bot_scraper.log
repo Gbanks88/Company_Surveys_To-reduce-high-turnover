@@ -1,0 +1,41 @@
+2025-02-20 22:30:39,075 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python
+2025-02-20 22:30:39,198 - INFO - Successfully scraped data from https://github.com/gunthercox/ChatterBot
+2025-02-20 22:30:39,458 - INFO - Successfully scraped data from https://github.com/rasa/rasa
+2025-02-20 22:30:39,468 - INFO - Successfully scraped data from https://github.com/botpress/botpress
+2025-02-20 22:30:39,485 - INFO - Successfully scraped data from https://github.com/microsoft/botbuilder-samples
+2025-02-20 22:30:39,491 - INFO - Results saved to bot_requirements_analysis.json and bot_requirements_analysis.csv
+2025-02-20 22:31:41,827 - ERROR - Error scraping https://github.com/rasa/rasa/tree/main/examples/concertbot: 404 Client Error: Not Found for url: https://github.com/rasa/rasa/tree/main/examples/concertbot
+2025-02-20 22:31:41,880 - ERROR - Error scraping https://github.com/botpress/botpress/blob/master/examples/custom-component: 404 Client Error: Not Found for url: https://github.com/botpress/botpress/blob/master/examples/custom-component
+2025-02-20 22:31:41,896 - ERROR - Error scraping https://github.com/gunthercox/ChatterBot/tree/master/examples/basic_example: 404 Client Error: Not Found for url: https://github.com/gunthercox/ChatterBot/tree/master/examples/basic_example
+2025-02-20 22:31:42,053 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot
+2025-02-20 22:31:42,128 - INFO - Successfully scraped data from https://github.com/microsoft/botbuilder-samples/tree/main/samples/python/01.console-echo
+2025-02-20 22:31:42,129 - ERROR - Error scraping https://github.com/rasa/rasa/tree/main/examples/formbot: 404 Client Error: Not Found for url: https://github.com/rasa/rasa/tree/main/examples/formbot
+2025-02-20 22:31:42,227 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/45.state-management
+2025-02-20 22:31:42,232 - INFO - Results saved to bot_requirements_analysis.json and bot_requirements_analysis.csv
+2025-02-20 22:32:05,580 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/45.state-management
+2025-02-20 22:32:05,630 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot
+2025-02-20 22:32:05,683 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/16.proactive-messages
+2025-02-20 22:32:05,789 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot
+2025-02-20 22:32:05,802 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/44.prompt-for-user-input
+2025-02-20 22:32:06,337 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
+2025-02-20 22:32:06,342 - INFO - Results saved to bot_requirements_analysis.json and bot_requirements_analysis.csv
+2025-02-20 22:32:43,282 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot
+2025-02-20 22:32:43,293 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot
+2025-02-20 22:32:43,301 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/45.state-management
+2025-02-20 22:32:43,321 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/44.prompt-for-user-input
+2025-02-20 22:32:43,369 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/16.proactive-messages
+2025-02-20 22:32:43,824 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
+2025-02-20 22:32:43,829 - INFO - Results saved to bot_requirements_analysis.json and bot_requirements_analysis.csv
+2025-02-20 22:33:19,488 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot
+2025-02-20 22:33:19,514 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/16.proactive-messages
+2025-02-20 22:33:19,615 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot
+2025-02-20 22:33:19,659 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/45.state-management
+2025-02-20 22:33:19,669 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/44.prompt-for-user-input
+2025-02-20 22:33:20,026 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
+2025-02-20 22:33:41,220 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/44.prompt-for-user-input
+2025-02-20 22:33:41,317 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/45.state-management
+2025-02-20 22:33:41,495 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/02.echo-bot
+2025-02-20 22:33:41,553 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/16.proactive-messages
+2025-02-20 22:33:41,590 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/13.core-bot
+2025-02-20 22:33:41,830 - INFO - Successfully scraped data from https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/24.bot-authentication-msgraph
+2025-02-20 22:33:41,835 - INFO - Results saved to bot_requirements_analysis.json and bot_requirements_analysis.csv

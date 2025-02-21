@@ -1,0 +1,112 @@
+```diagram
+graph TD
+    %% System Components
+    SYS[Survey System] --> DB[(Survey Database)]
+    SYS --> STAT[Statistical Analysis]
+    SYS --> VIS[Visualization Engine]
+    
+    %% Data Flow
+    DB --> |Weekly Data| STAT
+    STAT --> |Analysis Results| VIS
+    VIS --> |Reports & Charts| RPT[Reports Dashboard]
+    
+    %% Survey Components
+    SURV[Survey Module] --> |Question 1| Q1[How was your day?]
+    SURV --> |Question 2| Q2[What did you accomplish?]
+    SURV --> |Question 3| Q3[Are you happy at work?]
+    
+    %% Statistical Analysis Components
+    STAT --> DESC[Descriptive Statistics]
+    STAT --> INF[Inferential Statistics]
+    STAT --> PROB[Probability Analysis]
+    
+    DESC --> |Mean/Median/Mode| METRICS[Key Metrics]
+    DESC --> |Standard Deviation| VAR[Variance Analysis]
+    INF --> |T-Tests| COMP[Team Comparisons]
+    PROB --> |Distribution Analysis| TREND[Trend Analysis]
+    
+    %% Organizational Structure
+    ORG[Organization] --> DIR[Director of Support Services]
+    DIR --> SW[Software Support]
+    DIR --> HW[Hardware Support]
+    DIR --> MNT[Maintenance Support]
+    
+    %% Team Breakdowns
+    SW --> |Weekly Survey| SURV
+    HW --> |Weekly Survey| SURV
+    MNT --> |Weekly Survey| SURV
+    
+    %% Software Team Details
+    SW --> SW1[Development Team]
+    SW --> SW2[DevOps Team]
+    SW --> SW3[QA Team]
+    
+    %% Hardware Team Details
+    HW --> HW1[Network Team]
+    HW --> HW2[Infrastructure Team]
+    HW --> HW3[Support Team]
+    
+    %% Maintenance Team Details
+    MNT --> MNT1[Preventive Maintenance]
+    MNT --> MNT2[Repair Team]
+    MNT --> MNT3[Quality Control]
+    
+    %% Data Analysis Flow
+    RPT --> |Team Reports| DIR
+    RPT --> |Department Analysis| SW
+    RPT --> |Department Analysis| HW
+    RPT --> |Department Analysis| MNT
+    
+    %% Visualization Types
+    VIS --> V1[Time Series Plots]
+    VIS --> V2[Box Plots]
+    VIS --> V3[Correlation Heatmaps]
+    
+    %% Statistical Methods
+    METRICS --> |Team Performance| KPI[KPI Dashboard]
+    VAR --> |Team Variability| KPI
+    COMP --> |Inter-team Analysis| KPI
+    TREND --> |Longitudinal Analysis| KPI
+    
+    %% Styling
+    classDef system fill:#f9f,stroke:#333,stroke-width:4px
+    classDef data fill:#bbf,stroke:#333,stroke-width:2px
+    classDef team fill:#dfd,stroke:#333,stroke-width:1px
+    classDef analysis fill:#ffd,stroke:#333,stroke-width:2px
+    
+    class SYS,SURV system
+    class DB,RPT data
+    class SW,HW,MNT team
+    class STAT,DESC,INF,PROB analysis
+```
+
+Note: This comprehensive diagram shows:
+1. Organizational Structure
+   - Leadership hierarchy
+   - Team divisions
+   - Reporting relationships
+
+2. Survey System
+   - Data collection
+   - Analysis components
+   - Reporting flow
+
+3. Statistical Analysis
+   - Descriptive statistics
+   - Inferential analysis
+   - Probability modeling
+
+4. Data Flow
+   - Survey responses
+   - Analysis pipeline
+   - Report generation
+
+5. Visualization
+   - Different chart types
+   - Analysis outputs
+   - KPI tracking
+
+To view this diagram:
+1. Copy the content between the ``` markers
+2. Paste it into a Mermaid-compatible editor or diagram.io
+3. The diagram will automatically render showing both the organizational structure and data analysis flow
